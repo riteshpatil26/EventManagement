@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirebaseApp/Login/ProfileViewController.swift"
-            timestampString = "547847013.921968"
+            timestampString = "547850109.0947551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "351"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirebaseApp/Login/ProfileViewController.swift"
-            timestampString = "547847013.922079"
+            timestampString = "547850109.097073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "289"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirebaseApp/Login/ProfileViewController.swift"
-            timestampString = "547847013.9221621"
+            timestampString = "547850109.09724"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "309"
@@ -385,38 +385,6 @@
             endingLineNumber = "53"
             landmarkName = "handleSignUp()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirebaseApp.DescriptionViewController.handleSignUp() -&gt; ()"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/Admin/DescriptionViewController.swift"
-                  timestampString = "547842477.674109"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "14">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in FirebaseApp.DescriptionViewController.handleSignUp() -&gt; ()"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/Admin/DescriptionViewController.swift"
-                  timestampString = "547842477.6762739"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -593,38 +561,6 @@
             endingLineNumber = "295"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirebaseApp.DoctorViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/DashBoard/DoctorViewController.swift"
-                  timestampString = "547842477.72515"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "295"
-                  endingLineNumber = "295"
-                  offsetFromSymbolStart = "7900">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[1] = Value Promoted from Box&gt; of closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; () in FirebaseApp.DoctorViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/DashBoard/DoctorViewController.swift"
-                  timestampString = "547842477.727139"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "296"
-                  endingLineNumber = "296"
-                  offsetFromSymbolStart = "18">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -769,38 +705,6 @@
             endingLineNumber = "91"
             landmarkName = "getAllKeys(string:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirebaseApp.PhotoAlbumViewController.getAllKeys(string: Swift.String) -&gt; ()"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/Admin/PhotoAlbumViewController.swift"
-                  timestampString = "547842477.767126"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in FirebaseApp.PhotoAlbumViewController.getAllKeys(string: Swift.String) -&gt; ()"
-                  moduleName = "FirebaseApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patil.ri/Downloads/Last%20Assigment/FirebaseApp-6-Downloading-Images-Start/FirebaseApp/Admin/PhotoAlbumViewController.swift"
-                  timestampString = "547842477.7696151"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -848,6 +752,54 @@
             startingLineNumber = "233"
             endingLineNumber = "233"
             landmarkName = "observePosts(string:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseApp/App Module/Photo /PhotoAlbumViewController.swift"
+            timestampString = "547856726.415266"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "306"
+            endingLineNumber = "306"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseApp/App Module/Photo /PhotoAlbumViewController.swift"
+            timestampString = "547856726.415714"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirebaseApp/App Module/Photo /PhotoAlbumViewController.swift"
+            timestampString = "547856726.4159369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

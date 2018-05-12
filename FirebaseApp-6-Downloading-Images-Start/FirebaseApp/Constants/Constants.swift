@@ -1,9 +1,9 @@
 //
 //  Constants.swift
-//  WMM
+// Firebase App
 //
-//  Created by Ritesh Patil on 11/7/16.
-//  Copyright © 2016 Dhaval Gogri. All rights reserved.
+//  Created by Ritesh Patil on 05/12/18.
+//  Copyright © 2018 Dhaval Gogri. All rights reserved.
 //
 
 import Foundation

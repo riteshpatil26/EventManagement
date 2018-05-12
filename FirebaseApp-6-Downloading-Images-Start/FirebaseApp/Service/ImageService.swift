@@ -3,7 +3,7 @@
 //  FirebaseApp
 //
 //  Created by Ritesh Patil.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Copyright © 2018 Ritesh Patil. All rights reserved.
 //
 
 import Foundation

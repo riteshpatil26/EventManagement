@@ -3,7 +3,7 @@
 //  FirebaseApp
 //
 //  Created by Ritesh Patil.
-//  Copyright © 2018 Robert Canton. All rights reserved.
+//  Copyright © 2018 Ritesh Patil.. All rights reserved.
 //
 
 import Foundation
@@ -40,10 +40,7 @@ class UserService {
             if let dict = snapshot.value as? [String:Any],
                 let username = dict["serviceName"] as? String
             {
-                
-              //  userProfile = Services(id: snapshot.key, author: username)
-                
-               // userProfile = Services(uid: snapshot.key, username: username, photoURL: url)
+           
             }
             
             completion(userProfile)

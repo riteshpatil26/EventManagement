@@ -66,6 +66,10 @@
 		CD5CE83E20A643A400D4696A /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CE83D20A643A400D4696A /* CategoryCollectionViewCell.swift */; };
 		CD5CE84020A666C200D4696A /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CE83F20A666C200D4696A /* PhotoAlbumViewController.swift */; };
 		CD5CE84220A66AC100D4696A /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CE84120A66AC100D4696A /* PhotoCollectionViewCell.swift */; };
+		CD5CE84820A78BB800D4696A /* PurpleRain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD5CE84720A78B5900D4696A /* PurpleRain.m4a */; };
+		CD5CE84A20A78C8400D4696A /* CateforyExtensionFIle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5CE84920A78C8400D4696A /* CateforyExtensionFIle.swift */; };
+		CD63A8CD20A79057001F7B04 /* drum01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD63A8CC20A79057001F7B04 /* drum01.mp3 */; };
+		CD63A8CF20A7964B001F7B04 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD63A8CE20A7964B001F7B04 /* DetailCollectionViewCell.swift */; };
 		CD79CD8420939B9800CC431A /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79CD8320939B9800CC431A /* ServiceTableViewCell.swift */; };
 		CD79CD8620939BB800CC431A /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD79CD8520939BB800CC431A /* ServiceTableViewCell.xib */; };
 		CD79CD8A2093EB5000CC431A /* SeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79CD892093EB5000CC431A /* SeviceViewController.swift */; };
@@ -135,6 +139,10 @@
 		CD5CE83D20A643A400D4696A /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD5CE83F20A666C200D4696A /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		CD5CE84120A66AC100D4696A /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD5CE84720A78B5900D4696A /* PurpleRain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = PurpleRain.m4a; sourceTree = "<group>"; };
+		CD5CE84920A78C8400D4696A /* CateforyExtensionFIle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CateforyExtensionFIle.swift; sourceTree = "<group>"; };
+		CD63A8CC20A79057001F7B04 /* drum01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum01.mp3; sourceTree = "<group>"; };
+		CD63A8CE20A7964B001F7B04 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD79CD8320939B9800CC431A /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		CD79CD8520939BB800CC431A /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		CD79CD892093EB5000CC431A /* SeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeviceViewController.swift; sourceTree = "<group>"; };
@@ -351,8 +359,11 @@
 			isa = PBXGroup;
 			children = (
 				CD5CE83920A6120900D4696A /* Category.storyboard */,
+				CD5CE84720A78B5900D4696A /* PurpleRain.m4a */,
+				CD63A8CC20A79057001F7B04 /* drum01.mp3 */,
 				CD5CE83D20A643A400D4696A /* CategoryCollectionViewCell.swift */,
 				CD5CE83720A611A700D4696A /* CategoryViewController.swift */,
+				CD5CE84920A78C8400D4696A /* CateforyExtensionFIle.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -371,6 +382,7 @@
 			children = (
 				CD5CE83F20A666C200D4696A /* PhotoAlbumViewController.swift */,
 				CD5CE84120A66AC100D4696A /* PhotoCollectionViewCell.swift */,
+				CD63A8CE20A7964B001F7B04 /* DetailCollectionViewCell.swift */,
 			);
 			path = "Photo ";
 			sourceTree = "<group>";
@@ -450,6 +462,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5CE84820A78BB800D4696A /* PurpleRain.m4a in Resources */,
+				CD63A8CD20A79057001F7B04 /* drum01.mp3 in Resources */,
 				CD2760522091399200020841 /* Menu.storyboard in Resources */,
 				CD27605B2091399200020841 /* Login.storyboard in Resources */,
 				CD27600E2091395400020841 /* myriad-set-pro_semibold.ttf in Resources */,
@@ -551,6 +565,7 @@
 				CD27604B2091399200020841 /* RoundedView.swift in Sources */,
 				CD2760602091399200020841 /* MenuViewController.swift in Sources */,
 				CD27604C2091399200020841 /* DescriptionViewController.swift in Sources */,
+				CD63A8CF20A7964B001F7B04 /* DetailCollectionViewCell.swift in Sources */,
 				CD5CE84020A666C200D4696A /* PhotoAlbumViewController.swift in Sources */,
 				CD27605A2091399200020841 /* MaterialLoadingIndicator.swift in Sources */,
 				CD5CE83E20A643A400D4696A /* CategoryCollectionViewCell.swift in Sources */,
@@ -572,6 +587,7 @@
 				CD27605F2091399200020841 /* LoginHelper.swift in Sources */,
 				CD2760492091399200020841 /* activityIndicator.swift in Sources */,
 				CD2760722091491B00020841 /* Services.swift in Sources */,
+				CD5CE84A20A78C8400D4696A /* CateforyExtensionFIle.swift in Sources */,
 				CD27605D2091399200020841 /* Toast.swift in Sources */,
 				CD2760412091399200020841 /* LoadingOverlay.swift in Sources */,
 				CD2760432091399200020841 /* BaseViewController.swift in Sources */,

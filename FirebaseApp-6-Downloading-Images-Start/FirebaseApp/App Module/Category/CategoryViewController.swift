@@ -9,17 +9,20 @@
 import UIKit
 import Firebase
 
-
+import AVFoundation
 protocol CategorynameDelegate {
     func sendCategoryName(string : String)
 }
 var catergorydelegate1 :CategorynameDelegate!
 var globalCategorySring1 :String = String()
-
+var songPlayer:AVAudioPlayer = AVAudioPlayer()
 class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate {
 
     @IBOutlet weak var containerCollectionView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    var hasBeenPaused = false
     
     let reuseIdentifier = "LibraryCell"
     var serviceArray :Array<Services> = Array<Services>()
@@ -33,11 +36,14 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
     
     var keyArray:Array<String>  = Array<String>()
     
-    @IBOutlet weak var deleteOverlay: UIView!
+    var isFirstSongPlaying:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        prepareSongAndSession(fileName: "PurpleRain", extensionofmusic: "m4a")
+        isFirstSongPlaying = false
+        songPlayer.play()
         if isFromAdmin == false{
         addSlideMenuButton()
             
@@ -143,32 +149,15 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
                     print("deleted succesfully")
                     print("suceess")
 
-
-
                 }
             }
-            
-          
-
-         
-            
-            //print(self.selectedIndexpath)
+  
             print(self.keyArray[self.selectedIndexpath])
             let when = DispatchTime.now() + 1
             
             DispatchQueue.main.asyncAfter(deadline: when, execute: {
-
-
-                print(self.keyArray[self.selectedIndexpath])
-                
-                
-                
-                
-                Database.database().reference().child("services").child(self.keyArray[self.selectedIndexpath]).removeValue()
-                
-             
-                
-               
+ Database.database().reference().child("services").child(self.keyArray[self.selectedIndexpath]).removeValue()
+   
                 self.serviceArray.remove(at: self.selectedIndexpath)
                 self.collectionView.deleteItems(at: [self.selectedIndexPathNew])
                 self.selectedIndexpath = -1
@@ -358,6 +347,50 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
         _ = cell as! CategoryCollectionViewCell
     }
 
-   
+    @IBAction func play(_ sender: Any) {
+        //14
+        songPlayer.play()
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+        //16
+        if songPlayer.isPlaying {
+           
+            hasBeenPaused = true
+            songPlayer.volume = 0
+        } else {
+            hasBeenPaused = false
+            songPlayer.volume = 0.6
+        }
+        
+    }
+    
+    @IBAction func restart(_ sender: Any) {
+        //17 -
+        if songPlayer.isPlaying || hasBeenPaused {
+           
+            songPlayer.currentTime = 0
+            
+            songPlayer.play()
+        } else  {
+            songPlayer.play()
+        }
+        if isFirstSongPlaying == false{
+             isFirstSongPlaying = true
+        prepareSongAndSession(fileName: "drum01", extensionofmusic:"mp3")
+           songPlayer.pause()
+            songPlayer.play()
+        }else if isFirstSongPlaying == true{
+            prepareSongAndSession(fileName: "PurpleRain", extensionofmusic: "m4a")
+            isFirstSongPlaying = false
+            songPlayer.play()
+            
+        }
+        
+        
+        
+    }
+
+    
 
 }
