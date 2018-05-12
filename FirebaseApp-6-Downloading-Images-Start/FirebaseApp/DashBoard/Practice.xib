@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="myriad-set-pro_thin.ttf">
+            <string>MyriadSetPro-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="praticeCell" rowHeight="78" id="vTe-Nq-Vrv" customClass="PracticeTableViewCell" customModule="FirebaseApp">
+            <rect key="frame" x="0.0" y="0.0" width="611" height="78"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vTe-Nq-Vrv" id="1cM-LN-egk">
+                <rect key="frame" x="0.0" y="0.0" width="611" height="77.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vK8-Ih-BoG">
+                        <rect key="frame" x="0.0" y="0.0" width="612" height="76"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhJ-oc-ZfC">
+                                <rect key="frame" x="0.0" y="74" width="612" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5WC-or-vRG"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medicalOfficer" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-Ej-Nl8">
+                                <rect key="frame" x="12" y="26" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="aO7-Wc-cxP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKp-Ac-gRz">
+                                <rect key="frame" x="58" y="21" width="517" height="35"/>
+                                <fontDescription key="fontDescription" name="MyriadSetPro-Thin" family="Myriad Set Pro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2073566875" green="0.27551049189999999" blue="0.29422360749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ews-Ej-Nl8" firstAttribute="top" secondItem="vK8-Ih-BoG" secondAttribute="top" constant="26" id="16p-Db-tVc"/>
+                            <constraint firstItem="Ews-Ej-Nl8" firstAttribute="centerY" secondItem="vK8-Ih-BoG" secondAttribute="centerY" id="7Ha-go-03T"/>
+                            <constraint firstItem="WKp-Ac-gRz" firstAttribute="leading" secondItem="Ews-Ej-Nl8" secondAttribute="trailing" constant="21" id="7od-Pf-FyB"/>
+                            <constraint firstAttribute="trailing" secondItem="PhJ-oc-ZfC" secondAttribute="trailing" id="CeV-E1-i8h"/>
+                            <constraint firstAttribute="bottom" secondItem="PhJ-oc-ZfC" secondAttribute="bottom" constant="1" id="Cic-7j-3rb"/>
+                            <constraint firstItem="Ews-Ej-Nl8" firstAttribute="top" secondItem="WKp-Ac-gRz" secondAttribute="top" constant="5" id="L7t-co-VKp"/>
+                            <constraint firstItem="Ews-Ej-Nl8" firstAttribute="leading" secondItem="vK8-Ih-BoG" secondAttribute="leadingMargin" constant="4" id="bcF-X9-huJ"/>
+                            <constraint firstItem="PhJ-oc-ZfC" firstAttribute="leading" secondItem="vK8-Ih-BoG" secondAttribute="leading" id="kHM-LW-ux2"/>
+                            <constraint firstItem="Ews-Ej-Nl8" firstAttribute="bottom" secondItem="WKp-Ac-gRz" secondAttribute="bottom" constant="-5" id="nB5-42-qOc"/>
+                            <constraint firstAttribute="trailing" secondItem="WKp-Ac-gRz" secondAttribute="trailing" constant="37" id="oiQ-IS-CEj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="vK8-Ih-BoG" firstAttribute="top" secondItem="1cM-LN-egk" secondAttribute="top" id="EIn-Xa-hxH"/>
+                    <constraint firstItem="vK8-Ih-BoG" firstAttribute="leading" secondItem="1cM-LN-egk" secondAttribute="leading" id="bYU-40-y2I"/>
+                    <constraint firstItem="vK8-Ih-BoG" firstAttribute="centerX" secondItem="1cM-LN-egk" secondAttribute="centerX" id="hT5-ag-Gte"/>
+                    <constraint firstItem="vK8-Ih-BoG" firstAttribute="centerY" secondItem="1cM-LN-egk" secondAttribute="centerY" id="xz6-8p-bta"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image1" destination="Ews-Ej-Nl8" id="IkV-5G-ZSs"/>
+                <outlet property="practiceName" destination="WKp-Ac-gRz" id="WEh-vq-L9C"/>
+            </connections>
+            <point key="canvasLocation" x="-326.5" y="-49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="medicalOfficer" width="25" height="25"/>
+    </resources>
+</document>

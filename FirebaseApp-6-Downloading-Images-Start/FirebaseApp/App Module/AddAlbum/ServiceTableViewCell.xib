@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="serviceCell" rowHeight="50" id="KLE-hf-cPv" customClass="ServiceTableViewCell" customModule="FirebaseApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KLE-hf-cPv" id="fp5-iq-43k">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bt-4E-FdL">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="Ziw-Ei-9Cr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Bt-4E-FdL" firstAttribute="centerY" secondItem="fp5-iq-43k" secondAttribute="centerY" id="MFL-tF-PgW"/>
+                    <constraint firstItem="2Bt-4E-FdL" firstAttribute="top" secondItem="fp5-iq-43k" secondAttribute="top" id="Zff-Ro-tiv"/>
+                    <constraint firstItem="2Bt-4E-FdL" firstAttribute="leading" secondItem="fp5-iq-43k" secondAttribute="leading" id="aJL-Yq-G5m"/>
+                    <constraint firstItem="2Bt-4E-FdL" firstAttribute="centerX" secondItem="fp5-iq-43k" secondAttribute="centerX" id="kyZ-pP-Gcv"/>
+                    <constraint firstAttribute="trailing" secondItem="2Bt-4E-FdL" secondAttribute="trailing" id="ngC-Ti-v26"/>
+                    <constraint firstAttribute="bottom" secondItem="2Bt-4E-FdL" secondAttribute="bottom" constant="-0.5" id="rAk-h2-FA4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="serviceLabel" destination="2Bt-4E-FdL" id="Tbn-rg-eVw"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>
