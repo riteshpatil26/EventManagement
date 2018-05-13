@@ -3,7 +3,7 @@
 //  Firebase App
 //
 //  Created by Ritesh Patil.
-//  Copyright © 2016 Ritesh Patil. All rights reserved.
+//  Copyright © 2018 Ritesh Patil. All rights reserved.
 //
 
 import UIKit
@@ -348,9 +348,12 @@ class ProfileViewController: BaseViewController, UIActionSheetDelegate, UITextFi
     @IBAction func updateClicked(_ sender: UIButton) {
         if(isDataValidated()){
             //globalscrollViewDelegate.scrollViewonUpdate!()
-          
+            if profilePic.image != nil{
             self.handleSignUp()
-            
+            }else {
+                 Utils.showToast(message: "Please take profile picture", view: view, image: UIImage(named: errorImageName)!)
+                
+            }
             print(self.userName)
             print(self.password)
             

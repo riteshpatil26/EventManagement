@@ -60,10 +60,10 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
             longGesture.delegate = self
             self.collectionView.addGestureRecognizer(longGesture)
             
-            let newBackButton = UIBarButtonItem(image: UIImage(named: "back"), landscapeImagePhone: nil, style: .plain, target: self, action: #selector(self.backButtonClick(sender:)))
-           
-            self.navigationItem.rightBarButtonItem = newBackButton
-            
+//            let newBackButton = UIBarButtonItem(image: UIImage(named: "back"), landscapeImagePhone: nil, style: .plain, target: self, action: #selector(self.backButtonClick(sender:)))
+//
+//            self.navigationItem.rightBarButtonItem = newBackButton
+//
               self.getAllKeys()
         }
         self.navigationController?.navigationBar.tintColor = UIColor.black
@@ -168,9 +168,18 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
             
         })
        
+        let shareAction = UIAlertAction(title: "ShareButton", style: .cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("Cancelled")
+            
+            
+            
+            self.selectedIndexpath = -1
+            self.collectionView.reloadData()
+        })
         
         //
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: {
             (alert: UIAlertAction!) -> Void in
             print("Cancelled")
             self.selectedIndexpath = -1
@@ -232,9 +241,9 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
         noDataLabel.textAlignment = .center
         noDataLabel.numberOfLines = 2
         noDataLabel.alpha = 0.0
-        self.title = "Categories"
+        self.title = "Album"
         
-        
+        self.navigationItem.backBarButtonItem?.title = ""
         
     }
     
@@ -355,12 +364,20 @@ class CategoryViewController: BaseViewController,UICollectionViewDataSource,UICo
     @IBAction func pause(_ sender: Any) {
         //16
         if songPlayer.isPlaying {
+            if hasBeenPaused == false{
+                hasBeenPaused = true
+                songPlayer.volume = 0
+                
+            }else {
+                hasBeenPaused = false
+                songPlayer.volume = 0.6
+            }
            
+            
+        }else{
+            
             hasBeenPaused = true
             songPlayer.volume = 0
-        } else {
-            hasBeenPaused = false
-            songPlayer.volume = 0.6
         }
         
     }

@@ -287,10 +287,22 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
    
         noDataLabel.alpha = 0.0
         
-        self.title = "Categories"
+        self.title = "Photoes"
         
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        let newBackButton = UIBarButtonItem(image: UIImage(named: "back"), landscapeImagePhone: nil, style: .plain, target: self, action: #selector(self.backButtonClick(sender:)))
+      
+       newBackButton.tintColor = UIColor.white
+        self.navigationItem.leftBarButtonItem = newBackButton
+
+       
         
-        
+    }
+    
+    @objc func backButtonClick(sender: UIBarButtonItem) {
+    self.navigationController?.popViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {

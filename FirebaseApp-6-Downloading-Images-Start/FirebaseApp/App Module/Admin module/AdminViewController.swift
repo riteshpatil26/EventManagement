@@ -27,16 +27,28 @@ class AdminViewController: BaseViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationController?.isNavigationBarHidden = false
 
-        //  onSlideMenuButtonPressed(<#T##sender: UIButton##UIButton#>)
-      
         
         animateCell(cell: btnProfile)
         animateCell(cell: btnAdd)
       
       animateCell(cell: btnDelete)
        
+       addShadowandBorder(button: btnProfile)
+        addShadowandBorder(button: btnAdd)
+        addShadowandBorder(button: btnDelete)
+        
         
     }
+    func addShadowandBorder(button :UIButton){
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 5, height: 5)
+        button.layer.shadowRadius = 3
+        button.layer.shadowOpacity = 1.0
+    
+        button.layer.cornerRadius = 5
+        
+    }
+    
     
     
     @IBAction func onClickOfDeleteButton(_ sender: UIButton) {

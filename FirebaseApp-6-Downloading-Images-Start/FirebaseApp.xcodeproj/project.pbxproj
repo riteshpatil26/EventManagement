@@ -44,7 +44,6 @@
 		CD2760512091399200020841 /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27602A2091399000020841 /* AppExtension.swift */; };
 		CD2760522091399200020841 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD27602B2091399000020841 /* Menu.storyboard */; };
 		CD2760532091399200020841 /* ProfileDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27602C2091399000020841 /* ProfileDoctorViewController.swift */; };
-		CD2760542091399200020841 /* SignInViewTextFirled.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27602D2091399000020841 /* SignInViewTextFirled.swift */; };
 		CD2760552091399200020841 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27602E2091399100020841 /* UITextFieldExtension.swift */; };
 		CD2760562091399200020841 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27602F2091399100020841 /* Utils.swift */; };
 		CD2760572091399200020841 /* PrintData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2760302091399100020841 /* PrintData.swift */; };
@@ -74,6 +73,7 @@
 		CD79CD8620939BB800CC431A /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD79CD8520939BB800CC431A /* ServiceTableViewCell.xib */; };
 		CD79CD8A2093EB5000CC431A /* SeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD79CD892093EB5000CC431A /* SeviceViewController.swift */; };
 		CD79CD8C2093EEB700CC431A /* ServiceStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD79CD8B2093EEB700CC431A /* ServiceStoryBoard.storyboard */; };
+		CD912A3420A815930059270A /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD912A3320A815930059270A /* DetailCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +117,6 @@
 		CD27602A2091399000020841 /* AppExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
 		CD27602B2091399000020841 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		CD27602C2091399000020841 /* ProfileDoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDoctorViewController.swift; sourceTree = "<group>"; };
-		CD27602D2091399000020841 /* SignInViewTextFirled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewTextFirled.swift; sourceTree = "<group>"; };
 		CD27602E2091399100020841 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		CD27602F2091399100020841 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CD2760302091399100020841 /* PrintData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintData.swift; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		CD79CD8520939BB800CC431A /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		CD79CD892093EB5000CC431A /* SeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeviceViewController.swift; sourceTree = "<group>"; };
 		CD79CD8B2093EEB700CC431A /* ServiceStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceStoryBoard.storyboard; sourceTree = "<group>"; };
+		CD912A3320A815930059270A /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
 		F518532BBBD9EEF6AAD40CDD /* Pods-FirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,7 +325,6 @@
 				CD2760142091398E00020841 /* Profile.storyboard */,
 				CD2760272091399000020841 /* ProfileViewController.swift */,
 				CD2760212091398F00020841 /* SignInViewController.swift */,
-				CD27602D2091399000020841 /* SignInViewTextFirled.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -383,6 +382,7 @@
 				CD5CE83F20A666C200D4696A /* PhotoAlbumViewController.swift */,
 				CD5CE84120A66AC100D4696A /* PhotoCollectionViewCell.swift */,
 				CD63A8CE20A7964B001F7B04 /* DetailCollectionViewCell.swift */,
+				CD912A3320A815930059270A /* DetailCollectionViewController.swift */,
 			);
 			path = "Photo ";
 			sourceTree = "<group>";
@@ -560,6 +560,7 @@
 				CD27605E2091399200020841 /* AnimationHelper.swift in Sources */,
 				CD2760502091399200020841 /* AppDelegate.swift in Sources */,
 				CD2760512091399200020841 /* AppExtension.swift in Sources */,
+				CD912A3420A815930059270A /* DetailCollectionViewController.swift in Sources */,
 				CD79CD8A2093EB5000CC431A /* SeviceViewController.swift in Sources */,
 				CD21809220914DBC00BD4053 /* UserService.swift in Sources */,
 				CD27604B2091399200020841 /* RoundedView.swift in Sources */,
@@ -575,7 +576,6 @@
 				CD27603E2091399200020841 /* B68UIFloatLabelTextField.swift in Sources */,
 				CD2760422091399200020841 /* Network.swift in Sources */,
 				CD27604E2091399200020841 /* ProfileViewController.swift in Sources */,
-				CD2760542091399200020841 /* SignInViewTextFirled.swift in Sources */,
 				CD2760552091399200020841 /* UITextFieldExtension.swift in Sources */,
 				CD2760712091491B00020841 /* Doctor.swift in Sources */,
 				CD2760572091399200020841 /* PrintData.swift in Sources */,

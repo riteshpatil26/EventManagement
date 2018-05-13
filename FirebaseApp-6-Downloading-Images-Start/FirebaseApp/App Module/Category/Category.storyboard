@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kX1-fv-v4g">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="665"/>
+                                        <rect key="frame" x="0.0" y="-8" width="375" height="665"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ai6-5a-nFv">
                                             <size key="itemSize" width="180" height="209"/>
@@ -53,14 +53,6 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-BH-lwI">
                                                             <rect key="frame" x="0.0" y="0.0" width="180" height="209"/>
                                                             <subviews>
-                                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6av-4p-XFm">
-                                                                    <rect key="frame" x="71.5" y="86" width="37" height="37"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="37" id="5KE-PG-GWf"/>
-                                                                        <constraint firstAttribute="height" constant="37" id="QL5-UI-wZT"/>
-                                                                    </constraints>
-                                                                    <color key="color" red="0.24313725489999999" green="0.74117647060000003" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </activityIndicatorView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="oPS-eW-uVX">
                                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="209"/>
                                                                 </imageView>
@@ -120,6 +112,14 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="209"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </view>
+                                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6av-4p-XFm">
+                                                                    <rect key="frame" x="71" y="86" width="37" height="37"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="37" id="5KE-PG-GWf"/>
+                                                                        <constraint firstAttribute="height" constant="37" id="QL5-UI-wZT"/>
+                                                                    </constraints>
+                                                                    <color key="color" red="0.24313725489999999" green="0.74117647060000003" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </activityIndicatorView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -230,6 +230,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WHa-hZ-kF1"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="collectionView" destination="kX1-fv-v4g" id="o9b-9D-2Nb"/>
                         <outlet property="containerCollectionView" destination="dbd-vx-huf" id="MJ2-ce-XvE"/>
@@ -237,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-Zn-t0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="-197.45127436281859"/>
+            <point key="canvasLocation" x="38" y="-1072"/>
         </scene>
         <!--Photo Album View Controller-->
         <scene sceneID="IQZ-UK-UGO">
@@ -419,6 +420,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zm9-eM-Xby"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="collectionView" destination="lcl-ED-rSu" id="RMl-Ii-KN3"/>
                         <outlet property="containerCollectionView" destination="XgA-wZ-AwY" id="k3u-8i-5SA"/>
@@ -426,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akz-kH-r5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="-197.45127436281859"/>
+            <point key="canvasLocation" x="-706" y="-1073"/>
         </scene>
     </scenes>
     <resources>

@@ -65,8 +65,11 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     
     func addSlideMenuButton(){
         let btnShowMenu = UIButton(type: UIButtonType.system)
+      
         btnShowMenu.setImage(self.defaultMenuImage(), for: UIControlState())
+         btnShowMenu.tintColor = UIColor.white
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        
         btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), for: UIControlEvents.touchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
         
@@ -76,7 +79,14 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     
     func addSlideSerachButton(){
         let btnShowMenu = UIButton(type: UIButtonType.system)
+        
+        
         btnShowMenu.setImage(self.defaultMenuImage(), for: UIControlState())
+       
+        
+        //btnShowMenu.ba = btnShowMenu.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        
+        
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         btnShowMenu.addTarget(self, action: #selector(BaseViewController.onSlideMenuButtonPressed(_:)), for: UIControlEvents.touchUpInside)
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)

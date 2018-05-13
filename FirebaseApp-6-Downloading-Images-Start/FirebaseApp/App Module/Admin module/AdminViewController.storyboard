@@ -57,7 +57,7 @@
                                             <constraint firstAttribute="height" constant="60" id="whu-Hr-t4V"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MyriadSetPro-Text" family="Myriad Set Pro" pointSize="16"/>
-                                        <state key="normal" title="Add Album">
+                                        <state key="normal" title="Create Album">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-711" y="-439"/>
         </scene>
-        <!--Add Events-->
+        <!--Create Album-->
         <scene sceneID="PhQ-PX-dSf">
             <objects>
-                <viewController restorationIdentifier="PracticeViewController" storyboardIdentifier="PracticeViewController" title="Add Events" id="RL7-iz-6aQ" customClass="PracticeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PracticeViewController" storyboardIdentifier="PracticeViewController" title="Create Album" id="RL7-iz-6aQ" customClass="PracticeViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4R5-98-e7H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,8 +138,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-f6-KgL">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-M7-Dhr" customClass="B68UIFloatLabelTextField" customModule="FirebaseApp" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="340" width="342" height="45"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-M7-Dhr" customClass="B68UIFloatLabelTextField" customModule="FirebaseApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="260" width="342" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="qHp-eg-dff"/>
                                         </constraints>
@@ -160,7 +160,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0t-cp-Tf0">
-                                        <rect key="frame" x="8" y="386" width="342" height="1"/>
+                                        <rect key="frame" x="8" y="306" width="342" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="maH-MU-X7T"/>
@@ -207,7 +207,7 @@
                                     <constraint firstAttribute="trailing" secondItem="LVb-M7-Dhr" secondAttribute="trailing" constant="25" id="6wl-gp-QaE"/>
                                     <constraint firstAttribute="trailing" secondItem="sgf-mK-V00" secondAttribute="trailing" constant="8" id="9C1-AB-XRB"/>
                                     <constraint firstItem="N0t-cp-Tf0" firstAttribute="top" secondItem="LVb-M7-Dhr" secondAttribute="bottom" constant="1" id="Aic-kk-7Yq"/>
-                                    <constraint firstItem="sgf-mK-V00" firstAttribute="top" secondItem="N0t-cp-Tf0" secondAttribute="bottom" constant="48" id="BQS-93-XcR"/>
+                                    <constraint firstItem="sgf-mK-V00" firstAttribute="top" secondItem="N0t-cp-Tf0" secondAttribute="bottom" constant="128" id="BQS-93-XcR"/>
                                     <constraint firstItem="N0t-cp-Tf0" firstAttribute="leading" secondItem="fa4-f6-KgL" secondAttribute="leading" constant="8" id="Kff-Ky-Wps"/>
                                     <constraint firstAttribute="bottom" secondItem="sgf-mK-V00" secondAttribute="bottom" constant="108" id="NiV-F9-7al"/>
                                     <constraint firstItem="PGe-hm-v6Y" firstAttribute="centerX" secondItem="fa4-f6-KgL" secondAttribute="centerX" id="Nng-SF-FxY"/>
@@ -215,7 +215,7 @@
                                     <constraint firstItem="sgf-mK-V00" firstAttribute="leading" secondItem="fa4-f6-KgL" secondAttribute="leading" constant="8" id="VCH-hr-2ce"/>
                                     <constraint firstItem="ha0-Tc-a7q" firstAttribute="top" secondItem="fa4-f6-KgL" secondAttribute="top" constant="54" id="Xff-jv-WRm"/>
                                     <constraint firstItem="ha0-Tc-a7q" firstAttribute="centerX" secondItem="fa4-f6-KgL" secondAttribute="centerX" id="gjy-SD-TK8"/>
-                                    <constraint firstItem="sgf-mK-V00" firstAttribute="top" secondItem="N0t-cp-Tf0" secondAttribute="bottom" constant="48" id="h8U-iq-cD3"/>
+                                    <constraint firstItem="sgf-mK-V00" firstAttribute="top" secondItem="N0t-cp-Tf0" secondAttribute="bottom" constant="128" id="h8U-iq-cD3"/>
                                     <constraint firstItem="LVb-M7-Dhr" firstAttribute="leading" secondItem="fa4-f6-KgL" secondAttribute="leading" constant="8" id="i09-Yj-z1J"/>
                                     <constraint firstItem="N0t-cp-Tf0" firstAttribute="top" secondItem="LVb-M7-Dhr" secondAttribute="bottom" constant="1" id="kju-NX-V2g"/>
                                     <constraint firstItem="PGe-hm-v6Y" firstAttribute="top" secondItem="fa4-f6-KgL" secondAttribute="top" constant="54" id="lUt-kd-pOL"/>
@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="797.60000000000002" y="-976.46176911544239"/>
         </scene>
-        <!--Add Photoes To Events-->
+        <!--Add Photoes To Album-->
         <scene sceneID="7NK-9q-vqN">
             <objects>
-                <viewController restorationIdentifier="ProfileDoctorViewController" storyboardIdentifier="ProfileDoctorViewController" title="Add Photoes To Events" id="Pd6-bw-vcU" customClass="ProfileDoctorViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ProfileDoctorViewController" storyboardIdentifier="ProfileDoctorViewController" title="Add Photoes To Album" id="Pd6-bw-vcU" customClass="ProfileDoctorViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMn-w3-2cv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +265,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAg-c3-zJV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Practice" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-le-8VZ" customClass="B68UIFloatLabelTextField" customModule="FirebaseApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Album" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-le-8VZ" customClass="B68UIFloatLabelTextField" customModule="FirebaseApp" customModuleProvider="target">
                                         <rect key="frame" x="10" y="220" width="356" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="m6F-fJ-byh"/>
@@ -464,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0Q-Kg-BLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="-304"/>
+            <point key="canvasLocation" x="1333.5999999999999" y="-304.4977511244378"/>
         </scene>
     </scenes>
     <resources>

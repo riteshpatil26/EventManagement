@@ -3,7 +3,7 @@
 //  Firebase APP
 //
 //  Created by Ritesh Patil
-//  Copyright © 2016 Ritesh Patil. All rights reserved.
+//  Copyright © 2018 Ritesh Patil. All rights reserved.
 //
 
 import UIKit
@@ -169,8 +169,8 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
             self.txtUsername.text = user.username  
         }
         self.txtPassword.text = ""
-        self.txtUsername.text = "ritesh.patil26@gmail.com"
-        self.txtPassword.text = "riteshnarayanpatil"
+     //   self.txtUsername.text = "ritesh.patil26@gmail.com"
+       // self.txtPassword.text = "riteshnarayanpatil"
         
         //globalisSignupDelegate = self
         
