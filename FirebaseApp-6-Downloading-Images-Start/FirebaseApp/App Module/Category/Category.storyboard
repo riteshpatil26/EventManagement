@@ -240,6 +240,73 @@
             </objects>
             <point key="canvasLocation" x="38" y="-1072"/>
         </scene>
+        <!--Detailed Photo-->
+        <scene sceneID="Xjw-JX-sZe">
+            <objects>
+                <viewController restorationIdentifier="DetailCollectionViewController" storyboardIdentifier="DetailCollectionViewController" title="Detailed Photo" id="d9g-bg-NNW" customClass="DetailCollectionViewController" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="amN-SD-SE1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bFA-LE-sx1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jnf-8Z-H4m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U8v-7z-rbU">
+                                    <size key="itemSize" width="327" height="643"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="detailViewCell" id="PJO-aJ-pdW" customClass="DetailCollectionViewCell" customModule="FirebaseApp" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="0.0" width="327" height="643"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="643"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UVR-OG-3sh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="643"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="UVR-OG-3sh" firstAttribute="leading" secondItem="PJO-aJ-pdW" secondAttribute="leading" id="BaI-du-9LB"/>
+                                            <constraint firstItem="UVR-OG-3sh" firstAttribute="top" secondItem="PJO-aJ-pdW" secondAttribute="top" id="HnP-Av-5tf"/>
+                                            <constraint firstAttribute="bottom" secondItem="UVR-OG-3sh" secondAttribute="bottom" id="XZ9-Cl-SNH"/>
+                                            <constraint firstAttribute="trailing" secondItem="UVR-OG-3sh" secondAttribute="trailing" id="lV2-Jn-JMG"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView1" destination="UVR-OG-3sh" id="9Rc-at-DUe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bFA-LE-sx1" firstAttribute="top" secondItem="amN-SD-SE1" secondAttribute="top" id="3Sl-5X-LIF"/>
+                            <constraint firstItem="jnf-8Z-H4m" firstAttribute="trailing" secondItem="YXd-hC-Z2Z" secondAttribute="trailing" id="A40-as-1Kd"/>
+                            <constraint firstItem="jnf-8Z-H4m" firstAttribute="bottom" secondItem="YXd-hC-Z2Z" secondAttribute="bottom" id="ARj-W8-kf9"/>
+                            <constraint firstItem="jnf-8Z-H4m" firstAttribute="leading" secondItem="YXd-hC-Z2Z" secondAttribute="leading" id="Oe9-gt-3uV"/>
+                            <constraint firstItem="jnf-8Z-H4m" firstAttribute="top" secondItem="amN-SD-SE1" secondAttribute="top" id="Twg-ez-FsL"/>
+                            <constraint firstItem="bFA-LE-sx1" firstAttribute="bottom" secondItem="YXd-hC-Z2Z" secondAttribute="bottom" id="bvD-tW-dk6"/>
+                            <constraint firstItem="bFA-LE-sx1" firstAttribute="leading" secondItem="YXd-hC-Z2Z" secondAttribute="leading" id="tbe-KN-DdL"/>
+                            <constraint firstItem="bFA-LE-sx1" firstAttribute="trailing" secondItem="YXd-hC-Z2Z" secondAttribute="trailing" id="y3V-Ku-XcR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YXd-hC-Z2Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailCollectionVIew" destination="jnf-8Z-H4m" id="8Fb-Ny-gU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxa-Gn-s1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1580" y="-1077.2113943028487"/>
+        </scene>
         <!--Photo Album View Controller-->
         <scene sceneID="IQZ-UK-UGO">
             <objects>

@@ -185,7 +185,7 @@ class PracticeViewController: UIViewController,UITextFieldDelegate,UIImagePicker
                         
                         print("User display name changed!")
                         
-                        self.saveProfile(username: "ritesh", profileImageURL: url!) { success in
+                        self.saveProfile(username: "admin@gmail.com", profileImageURL: url!) { success in
                             
                             
                             

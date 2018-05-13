@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+var imageview1 : UIImage = UIImage()
+
 class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate,CategorynameDelegate,UIGestureRecognizerDelegate {
     
     
@@ -124,49 +126,12 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
         let deleteAction = UIAlertAction(title: "Delete", style: .default, handler: {
             (alert: UIAlertAction!) -> Void in
             print("File Deleted")
-            
-            
-            //            let storage = Storage.storage()
-            //            let url = self.serviceArray[self.selectedIndexpath].photoURL
-            //            let storageRef = storage.reference(forURL: url!)
-            //
-            //            //Removes image from storage
-            //            storageRef.delete { error in
-            //                if let error = error {
-            //
-            //
-            //                    print(error)
-            //                } else {
-            //                    // File deleted successfully
-            //                    print("deleted succesfully")
-            //                    print("suceess")
-            //
-            //
-            //
-            //                }
-            //            }
-            //
-            
-            
-            
-            
-            //print(self.selectedIndexpath)
+
             
             let when = DispatchTime.now() + 1
             
             DispatchQueue.main.asyncAfter(deadline: when, execute: {
-                
-                
-                
-                
-                
-                
-                
-                Database.database().reference().child("Doctors").child(self.keyArray[self.selectedIndexpath]).removeValue()
-                
-                
-                
-                
+          Database.database().reference().child("Doctors").child(self.keyArray[self.selectedIndexpath]).removeValue()
                 self.serviceArray.remove(at: self.selectedIndexpath)
                 self.collectionView.deleteItems(at: [self.selectedIndexPathNew])
                 self.selectedIndexpath = -1
@@ -281,11 +246,15 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
         noDataLabel.frame = CGRect(x: 0, y: 0, width: self.collectionView.bounds.size.width, height: self.collectionView.bounds.size.height)
         
         noDataLabel.text = "No Records Found."
-        noDataLabel.textColor = UIColor.black
+        noDataLabel.textColor = UIColor.white
         noDataLabel.textAlignment = .center
         noDataLabel.numberOfLines = 2
    
+        
+        
         noDataLabel.alpha = 0.0
+        
+        self.collectionView.backgroundView = noDataLabel
         
         self.title = "Photoes"
         
@@ -297,6 +266,7 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
        newBackButton.tintColor = UIColor.white
         self.navigationItem.leftBarButtonItem = newBackButton
 
+        collectionView.backgroundColor = UIColor.clear
        
         
     }
@@ -315,8 +285,17 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
+        if serviceArray.count == 0{
+            
+            noDataLabel.alpha = 1
+            return 0;
+            
+        }else{
+            
+            noDataLabel.alpha = 0
+            return serviceArray.count;
+        }
         
-        return serviceArray.count;
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -329,7 +308,7 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
         cell.activityIndicatorView.startAnimating()
         cell.libraryImageView.contentMode = .scaleAspectFill
         cell.libraryImageView.clipsToBounds = true
-        collectionView.backgroundColor = UIColor.clear
+        
         
         
         if let checkedUrl = URL(string: serviceArray[indexPath.row].photoURL) {
@@ -367,6 +346,16 @@ class PhotoAlbumViewController: UIViewController,UICollectionViewDataSource,UICo
         if collectionView == self.collectionView
         {
             let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! PhotoCollectionViewCell
+            
+            imageview1 = cell.libraryImageView.image!
+            
+            let profileIdStoruboard  = UIStoryboard(name: "Category", bundle: nil)
+            var profileVC  = profileIdStoruboard.instantiateViewController(withIdentifier: "DetailCollectionViewController")
+            
+            
+           
+            
+            self.navigationController?.pushViewController(profileVC, animated: true)
             
 //            let profileIdStoruboard  = UIStoryboard(name: "DashBoard", bundle: nil)
 //            var profileVC  = profileIdStoruboard.instantiateViewController(withIdentifier: "DoctorViewController")
